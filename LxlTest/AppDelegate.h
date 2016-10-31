@@ -10,6 +10,8 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+
+//测试
 @property (strong, nonatomic) UIWindow *window;
 
 
