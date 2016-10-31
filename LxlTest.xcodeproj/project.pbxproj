@@ -26,6 +26,7 @@
 		B42BBDC71DC711BF00C3274F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42BBDCA1DC711BF00C3274F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B42BBDCC1DC711BF00C3274F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F4F5691DC7366800215160 /* LxlTestMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LxlTestMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 				B42BBDBF1DC711BF00C3274F /* AppDelegate.m */,
 				B42BBDC11DC711BF00C3274F /* ViewController.h */,
 				B42BBDC21DC711BF00C3274F /* ViewController.m */,
+				B4F4F5681DC7361E00215160 /* PodTest */,
 				B42BBDC41DC711BF00C3274F /* Main.storyboard */,
 				B42BBDC71DC711BF00C3274F /* Assets.xcassets */,
 				B42BBDC91DC711BF00C3274F /* LaunchScreen.storyboard */,
@@ -77,6 +79,14 @@
 				B42BBDBC1DC711BF00C3274F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4F4F5681DC7361E00215160 /* PodTest */ = {
+			isa = PBXGroup;
+			children = (
+				B4F4F5691DC7366800215160 /* LxlTestMacro.h */,
+			);
+			path = PodTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +320,7 @@
 				B42BBDD11DC711BF00C3274F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
