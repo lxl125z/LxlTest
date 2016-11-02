@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "LxlTest"
-s.version          = “1.0.1"
+s.version          =  "1.0.2"
 s.summary          = "LxlTest is a test code by LXL."
 s.description      = <<-DESC
 It is a marquee view used on iOS, which implement by Objective-C.

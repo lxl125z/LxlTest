@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "LxlTest.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+   
+    LxlTest * test = [[LxlTest alloc]init];
+    [test lxlTest:@"测试"];
+    
 }
 
 

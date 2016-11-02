@@ -13,6 +13,7 @@
 		B42BBDC61DC711BF00C3274F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42BBDC41DC711BF00C3274F /* Main.storyboard */; };
 		B42BBDC81DC711BF00C3274F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42BBDC71DC711BF00C3274F /* Assets.xcassets */; };
 		B42BBDCB1DC711BF00C3274F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42BBDC91DC711BF00C3274F /* LaunchScreen.storyboard */; };
+		B42E9F141DC9E49D00CEBB1D /* libTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B42E9F131DC9E49D00CEBB1D /* libTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B42BBDC71DC711BF00C3274F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42BBDCA1DC711BF00C3274F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B42BBDCC1DC711BF00C3274F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B42E9F131DC9E49D00CEBB1D /* libTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTest.a; sourceTree = "<group>"; };
+		B42E9F151DC9E52900CEBB1D /* LxlTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LxlTest.h; sourceTree = "<group>"; };
 		B4F4F5691DC7366800215160 /* LxlTestMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LxlTestMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -34,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42E9F141DC9E49D00CEBB1D /* libTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +88,8 @@
 		B4F4F5681DC7361E00215160 /* PodTest */ = {
 			isa = PBXGroup;
 			children = (
+				B42E9F151DC9E52900CEBB1D /* LxlTest.h */,
+				B42E9F131DC9E49D00CEBB1D /* libTest.a */,
 				B4F4F5691DC7366800215160 /* LxlTestMacro.h */,
 			);
 			path = PodTest;
@@ -115,7 +121,7 @@
 		B42BBDB01DC711BF00C3274F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "集美惠";
 				TargetAttributes = {
 					B42BBDB71DC711BF00C3274F = {
@@ -207,6 +213,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -229,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -254,6 +261,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -270,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -285,6 +293,10 @@
 				INFOPLIST_FILE = LxlTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LxlTest/PodTest",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jimeihui.LxlTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -298,6 +310,10 @@
 				INFOPLIST_FILE = LxlTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LxlTest/PodTest",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jimeihui.LxlTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
